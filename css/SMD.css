@@ -594,7 +594,7 @@ header .setting i:last-child {
     margin-right: 10px;
 }
 
-@media(max-width:767px) {
+@media(max-width:991px) {
     .landing .download ul {
         position: relative;
         display: grid;
@@ -613,17 +613,14 @@ header .setting i:last-child {
 
     .landing .download ul li i.one {
         font-size: 20px;
-        margin-left: 15px;
+        position: absolute;
+        left: 81%;
     }
 
-    .landing .download ul li i.two {
+    .landing .download ul li i.two, .three {
         font-size: 20px;
-        margin-left: 60px;
-    }
-
-    .landing .download ul li i.three {
-        font-size: 20px;
-        margin-left: 60px;
+        position: absolute;
+        left: 65%;
     }
 }
 
@@ -683,7 +680,7 @@ header .setting i:last-child {
     color: #24262B;
 }
 
-@media(max-width:767px) {
+@media(max-width:991px) {
     .landing .quality-download {
         display: none;
     }
@@ -741,7 +738,7 @@ header .setting i:last-child {
     color: #24262B;
 }
 
-@media(max-width:767px) {
+@media(max-width:991px) {
     .landing .quality-audio i {
         font-size: 20px;
     }
@@ -815,7 +812,7 @@ header .setting i:last-child {
     color: #24262B;
 }
 
-@media(max-width:767px) {
+@media(max-width:991px) {
     .landing .quality-translate i {
         font-size: 20px;
     }
@@ -1007,7 +1004,7 @@ header .setting i:last-child {
 
 .team .box {
     position: relative;
-    top: 110px;
+    top: 105px;
     text-align: center;
 
 }
@@ -1061,15 +1058,16 @@ header .setting i:last-child {
         border-radius: 100%;
         margin-top: -50px;
     }
+
     .team .box-team .team-deveolp .size h5 {
         font-size: 13px;
     }
-    
+
     .team .box-team .team-deveolp .size p {
         font-size: 13px;
         width: 250px;
     }
-    
+
     .team .box-team .team-deveolp {
         height: 200px;
     }
