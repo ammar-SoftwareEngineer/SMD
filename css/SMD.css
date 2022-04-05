@@ -507,14 +507,9 @@ flex: 1;
 
 .landing .social .icon:nth-child(6) {
     background-color: #FFFC00;
-    ;
-
 }
 
-.landing .social .icon i:nth-child(6) {
-    background-color: white;
-    color: white;
-}
+
 
 .landing .social .icon:nth-child(7) {
     background-color: black;
