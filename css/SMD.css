@@ -9,6 +9,7 @@
     --secondary-color: #EB521C;
     --thirdy-color: #FF8214;
     --fourty-color: #707070;
+    --dark-mode-color:#cb3100;
     --main-transition: 0.3s;
     --section-padding: 100px;
 }
@@ -42,16 +43,30 @@ body {
 .dark-mode li, h4 {
     color: white;
 }
+
 .dark-mode .landing {
-background-image: url("../images/Rect\ Light2.svg");
+    background-image: url("../images/Rect\ Light2.svg");
 }
+
 .dark-mode .landing::before {
     background-color: white;
     opacity: 50%;
 }
+
+.dark-mode .team .landing-team {
+    background-image: url("../images//Colored\ Shapes2.svg");
+}
+
+.dark-mode::-webkit-scrollbar-thumb {
+    background-color:var(--dark-mode-color) ;
+}
 .dark-mode .team .landing-team::before {
     background-color: white;
     opacity: 50%;
+}
+
+.dark-mode .landing form button{
+    background-color: #ff3f05;
 }
 .dark-mode .info h4 {
     color: white;
@@ -60,23 +75,49 @@ background-image: url("../images/Rect\ Light2.svg");
 .dark-mode .text p {
     color: #C6B9B9;
 }
-.dark-mode .contact .content .info address{
+
+.dark-mode .contact .content .info address {
     color: #C6B9B9;
 }
-.dark-mode .contact .content .info .phone{
+
+.dark-mode .contact .content .info .phone {
     color: #C6B9B9;
 }
-.dark-mode .about .images .overliy{
+
+.dark-mode .about .images .overliy {
     background-color: var(--main-color);
     opacity: 29%;
 }
-.dark-mode .about .questions ul{
-background-color: white;
+
+.dark-mode .about .questions ul {
+    background-color: white;
 
 }
-.dark-mode .about .questions ul li{
-   color: black;
-    }
+
+.dark-mode .about .questions ul li {
+    color: black;
+}
+
+.dark-mode header nav ul li ul {
+    background-color: #24262B;
+}
+
+.dark-mode header .setting ul li a:hover {
+    background-color: white;
+}
+
+.dark-mode header .main-nav {
+    background-color: #24262B;
+}
+
+.dark-mode .footer {
+    background-color: var(--dark-mode-color);
+}
+
+.dark-mode .contact .content form input[type="submit"] {
+    background-color: var(--dark-mode-color);
+}
+
 /* end dark mode */
 .light-mode {
     background-color: white;
@@ -173,7 +214,7 @@ header .logo img {
 }
 
 
-header .main-nav {
+header nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -186,28 +227,59 @@ header .main-nav {
 }
 
 @media(max-width:991px) {
+
+
     header .main-nav {
         display: none;
-        position: absolute;
-        background-color: white;
-        width: 100%;
-        height: 100%;
-        right: 0;
-        left: 0;
+    }
+
+    header .main-nav li.setting {
+        /* opacity: 0; */
         text-align: center;
-        padding: 16px 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    header .main-nav li {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+
     }
 
     header .toggle-button {
         display: block;
         color: var(--fourty-color);
         font-size: 22px;
-        position: absolute;
-        right: 5px;
-        transform: translate(-50%, -50%);
         cursor: pointer;
+        margin-left: -25px;
     }
 
+    header .main-nav {
+        /* display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        position: absolute; */
+        background-color: white;
+        height: 90.5vh;
+        right: 26%;
+        top: 10vh;
+        text-align: center;
+        padding: 16px 0;
+        transform: translateX(100%);
+        z-index: 90;
+        width: 250px;
+    }
+
+    /* .nav-active{
+        transform: translateX(0);
+    } */
+    header nav ul li ul {
+        position: absolute;
+        right: 100%;
+        top: 0;
+    }
 }
 
 header .main-nav li a {
@@ -222,6 +294,7 @@ header .main-nav li a {
     overflow: hidden;
     font-size: 20px;
     cursor: pointer;
+
 }
 
 header .main-nav>li>a::before {
@@ -265,21 +338,15 @@ header nav ul li:hover ul {
     z-index: 10;
 }
 
-header nav ul li ul li.two {
-    display: block;
-    width: 200px;
-    text-align: center;
 
-}
 
 header .two ul {
-    width: 162px;
+    width: 100%;
 }
 
 header .one ul {
-    left: 50%;
-    transform: translateX(-25%);
-    width: calc(200px - 7px);
+
+    min-width: 192px;
 }
 
 header .setting {
@@ -869,14 +936,17 @@ header .setting i:last-child {
 
 .help .imgs-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 45px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    place-items: center;
+    text-align: center;
     margin-top: 60px;
 }
 
 .help .imgs-container .box {
     position: relative;
     padding-bottom: 50px;
+
 }
 
 .help .imgs-container .box:hover img {
@@ -886,6 +956,7 @@ header .setting i:last-child {
 @media (min-width:768px) {
     .help .imgs-container .box {
         flex-basis: 50%;
+
     }
 }
 
@@ -910,9 +981,9 @@ header .setting i:last-child {
 
 .help .imgs-container .box .caption p {
     color: var(--main-color);
-    width: 250px;
+    width: 300px;
     line-height: 1.5;
-    
+
 }
 
 /* end help */
@@ -923,7 +994,7 @@ header .setting i:last-child {
     -webkit-box-shadow: 0 0 10px #ddd;
     -moz-box-shadow: 0 0 10px #ddd;
     box-shadow: 0 0 10px #ddd;
-    
+
 }
 
 .about .text p {
@@ -935,14 +1006,16 @@ header .setting i:last-child {
     font-size: 24px;
     color: var(--secondary-color);
 }
-.about .questions{
+
+.about .questions {
     padding-bottom: 50px;
 }
+
 .about .questions ul {
     width: 55%;
     position: relative;
     border: 1px solid #707070;
-border-radius: 15px;
+    border-radius: 15px;
 
 }
 
@@ -951,12 +1024,15 @@ border-radius: 15px;
     padding: 10px;
     font-weight: bold;
 }
-.about .questions ul li:first-child{
-border-radius: 15px 15px 0 0;
+
+.about .questions ul li:first-child {
+    border-radius: 15px 15px 0 0;
 }
-.about .questions ul p:last-child{
+
+.about .questions ul p:last-child {
     border-radius: 0 0 15px 15px;
-    }
+}
+
 .about .questions ul p {
     border: 1px solid #707070;
     padding: 10px;
@@ -1318,3 +1394,5 @@ border-radius: 15px 15px 0 0;
 }
 
 /* end footer */
+/* start keyframes */
+/* end keyframes*/
