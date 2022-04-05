@@ -32,7 +32,51 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
+}
 
+/* start dark mode */
+.dark-mode {
+    background-color: #24262B;
+}
+
+.dark-mode li, h4 {
+    color: white;
+}
+.dark-mode .landing::before {
+    background-color: white;
+    opacity: 50%;
+}
+.dark-mode .team .landing-team::before {
+    background-color: white;
+    opacity: 50%;
+}
+.dark-mode .info h4 {
+    color: white;
+}
+
+.dark-mode .text p {
+    color: #C6B9B9;
+}
+.dark-mode .contact .content .info address{
+    color: #C6B9B9;
+}
+.dark-mode .contact .content .info .phone{
+    color: #C6B9B9;
+}
+.dark-mode .about .images .overliy{
+    background-color: var(--main-color);
+    opacity: 29%;
+}
+.dark-mode .about .questions ul{
+background-color: white;
+
+}
+.dark-mode .about .questions ul li{
+   color: black;
+    }
+/* end dark mode */
+.light-mode {
+    background-color: white;
 }
 
 a {
@@ -98,11 +142,9 @@ ul {
 
 /* start header */
 header {
-    background-color: white;
     -webkit-box-shadow: 0 0 10px #ddd;
     -moz-box-shadow: 0 0 10px #ddd;
     box-shadow: 0 0 10px #ddd;
-    position: relative;
 }
 
 header .container {
@@ -111,6 +153,7 @@ header .container {
     align-items: center;
     flex-wrap: wrap;
     min-height: 100px;
+
 }
 
 header .logo img {
@@ -126,10 +169,6 @@ header .logo img {
     }
 }
 
-header nav {
-    position: relative;
-}
-
 
 header .main-nav {
     display: flex;
@@ -143,7 +182,7 @@ header .main-nav {
     }
 }
 
-@media only screen and (max-width:991px) {
+@media(max-width:991px) {
     header .main-nav {
         display: none;
         position: absolute;
@@ -161,8 +200,7 @@ header .main-nav {
         color: var(--fourty-color);
         font-size: 22px;
         position: absolute;
-        top: 0;
-        right: 0;
+        right: 5px;
         transform: translate(-50%, -50%);
         cursor: pointer;
     }
@@ -180,6 +218,7 @@ header .main-nav li a {
     transition: var(--main-transition);
     overflow: hidden;
     font-size: 20px;
+    cursor: pointer;
 }
 
 header .main-nav>li>a::before {
@@ -191,6 +230,7 @@ header .main-nav>li>a::before {
     top: 0;
     left: -100%;
     transition: var(--main-transition);
+
 }
 
 header .main-nav>li>a:hover {
@@ -219,7 +259,7 @@ header nav ul li ul {
 
 header nav ul li:hover ul {
     display: block;
-    z-index: 9;
+    z-index: 10;
 }
 
 header nav ul li ul li.two {
@@ -301,6 +341,7 @@ header .setting i:last-child {
     align-items: center;
     justify-content: center;
     min-height: calc(100vh - 100px);
+
 }
 
 .landing::before {
@@ -328,7 +369,7 @@ header .setting i:last-child {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    bottom: 210px;
+    bottom: 200px;
     max-width: 100%;
 
 }
@@ -345,7 +386,7 @@ header .setting i:last-child {
     font-size: 1.5rem;
 }
 
-@media only screen and (max-width:767px) {
+@media(max-width:767px) {
     .landing .main-text {
         bottom: 180px;
     }
@@ -360,80 +401,70 @@ header .setting i:last-child {
 
 }
 
-.landing .forms {
-    position: relative;
-}
 
-.landing .forms .link {
+.main-text form {
     position: absolute;
-    width: 68rem;
-    height: 4rem;
-    right: -30px;
-    bottom: 40px;
-    border-radius: 15px;
-    border: none;
-    padding: 0 35px;
-    color: var(--fourty-color);
-    font-size: 22px;
-    z-index: 1;
-flex: 1;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    display: flex;
 }
 
-.landing .forms form .link:focus {
+.landing form .link {
+    padding: 20px 50px;
+    border-radius: 15px 0 0 15px;
+    border: none;
+    font-size: 18px;
+    width: 48vw;
+    height: 60px;
+}
+
+.landing form .link:focus {
     outline: none;
 }
 
-.landing .forms button {
-    position: absolute;
-    width: 9rem;
-    height: 4rem;
-    bottom: 40px;
-    right: -30px;
+.landing form button {
+    padding: 10px;
     border-radius: 0 15px 15px 0;
     border: none;
-    padding: 0 30px;
-    z-index: 6;
-    background-color: var(--main-color);
+    background-color: var(--thirdy-color);
     color: white;
-    font-size: 25px;
-    text-align: center;
+    font-weight: bolder;
+    font-size: 18px;
     cursor: pointer;
-    
+    width: 180px;
+    height: 60px;
 }
 
 .landing form i {
     z-index: 7;
     color: white;
-    font-size: 22px;
+    font-size: 20px;
     cursor: pointer;
 }
 
 @media (max-width:767px) {
-    .landing .forms form .link {
-        max-width: 22.5rem;
-        height: 3.5rem;
-        right: 0px;
-        bottom: 0;
-        font-size: 18px;
+    .landing form .container {
+        top: 45%;
     }
 
-    .landing .forms button {
-        width: 6rem;
-        height: 3.5rem;
-        bottom: 0;
-        right: 0px;
-        font-size: 18px;
+    .landing form .link {
+        font-size: 16px;
+        height: 60px;
+        width: auto;
     }
 
-    .landing form i {
-        font-size: 18px;
+    .landing form button {
+        height: 60px;
+        width: 60px;
+    }
+
+    .landing form span {
         display: none;
     }
 }
 
-.landing .forms {
-    max-width: 100%;
-}
+
 
 .landing .social {
     display: flex;
@@ -517,9 +548,8 @@ flex: 1;
 
 @media(max-width:767px) {
     .landing .social {
-        top: 45%;
+        top: 47%;
         left: 50%;
-
         height: 35px;
         width: 35x;
     }
@@ -554,6 +584,7 @@ flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .landing .download ul li {
@@ -628,7 +659,14 @@ flex: 1;
     background-color: white;
     border-radius: 20px;
     padding: 10px 30px;
+   
 
+}
+
+.landing .download li.down:hover .quality-download {
+    display: flex;
+    width: 100%;
+    height: 100%;
 }
 
 .landing .quality-download i {
@@ -871,14 +909,16 @@ flex: 1;
 
 .help .imgs-container .box .caption p {
     color: var(--main-color);
+    width: 250px;
+    line-height: 1.5;
 }
 
 /* end help */
 /* start about */
 .about {
     padding-top: var(--section-padding);
-    background-color: rgb(250, 250, 250);
     position: relative;
+    
 }
 
 .about .text p {
@@ -894,7 +934,8 @@ flex: 1;
 .about .questions ul {
     width: 55%;
     position: relative;
-
+    border: 1px solid #707070;
+border-radius: 15px;
 }
 
 .about .questions ul li {
@@ -902,7 +943,12 @@ flex: 1;
     padding: 10px;
     font-weight: bold;
 }
-
+.about .questions ul li:first-child{
+border-radius: 15px 15px 0 0;
+}
+.about .questions ul p:last-child{
+    border-radius: 0 0 15px 15px;
+    }
 .about .questions ul p {
     border: 1px solid #707070;
     padding: 10px;
@@ -956,9 +1002,6 @@ flex: 1;
 
 /* end about */
 /* start team */
-.team {
-    background-color: white;
-}
 
 .team h4 {
     text-align: center;
@@ -1160,7 +1203,7 @@ flex: 1;
     display: block;
     color: #777;
     margin-bottom: 10px;
-    margin-left: 0px;
+    margin-left: 48px;
 }
 
 .contact .content .info h4:nth-of-type(1) {
