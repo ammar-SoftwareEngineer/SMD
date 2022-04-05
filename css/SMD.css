@@ -42,6 +42,9 @@ body {
 .dark-mode li, h4 {
     color: white;
 }
+.dark-mode .landing {
+background-image: url("../images/Rect\ Light2.svg");
+}
 .dark-mode .landing::before {
     background-color: white;
     opacity: 50%;
@@ -659,8 +662,6 @@ header .setting i:last-child {
     background-color: white;
     border-radius: 20px;
     padding: 10px 30px;
-   
-
 }
 
 .landing .download li.down:hover .quality-download {
@@ -875,7 +876,7 @@ header .setting i:last-child {
 
 .help .imgs-container .box {
     position: relative;
-
+    padding-bottom: 50px;
 }
 
 .help .imgs-container .box:hover img {
@@ -911,13 +912,17 @@ header .setting i:last-child {
     color: var(--main-color);
     width: 250px;
     line-height: 1.5;
+    
 }
 
 /* end help */
 /* start about */
 .about {
-    padding-top: var(--section-padding);
+    padding-top: 50px;
     position: relative;
+    -webkit-box-shadow: 0 0 10px #ddd;
+    -moz-box-shadow: 0 0 10px #ddd;
+    box-shadow: 0 0 10px #ddd;
     
 }
 
@@ -930,12 +935,15 @@ header .setting i:last-child {
     font-size: 24px;
     color: var(--secondary-color);
 }
-
+.about .questions{
+    padding-bottom: 50px;
+}
 .about .questions ul {
     width: 55%;
     position: relative;
     border: 1px solid #707070;
 border-radius: 15px;
+
 }
 
 .about .questions ul li {
