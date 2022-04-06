@@ -9,7 +9,7 @@
     --secondary-color: #EB521C;
     --thirdy-color: #FF8214;
     --fourty-color: #707070;
-    --dark-mode-color:#cb3100;
+    --dark-mode-color: #cb3100;
     --main-transition: 0.3s;
     --section-padding: 100px;
 }
@@ -44,6 +44,11 @@ body {
     color: white;
 }
 
+.dark-mode .help .imgs-container .box .caption h4 {
+    color: white;
+}
+
+
 .dark-mode .landing {
     background-image: url("../images/Rect\ Light2.svg");
 }
@@ -58,16 +63,18 @@ body {
 }
 
 .dark-mode::-webkit-scrollbar-thumb {
-    background-color:var(--dark-mode-color) ;
+    background-color: var(--dark-mode-color);
 }
+
 .dark-mode .team .landing-team::before {
     background-color: white;
     opacity: 50%;
 }
 
-.dark-mode .landing form button{
+.dark-mode .landing form button {
     background-color: #ff3f05;
 }
+
 .dark-mode .info h4 {
     color: white;
 }
@@ -116,6 +123,19 @@ body {
 
 .dark-mode .contact .content form input[type="submit"] {
     background-color: var(--dark-mode-color);
+}
+
+.dark-mode .contact .social .icon {
+    background-color: var(--dark-mode-color);
+}
+
+.dark-mode .contact .social p {
+    font-size: 17px;
+    color: white;
+}
+
+.dark-mode .contact .social .icon i {
+    color: white;
 }
 
 /* end dark mode */
@@ -197,7 +217,6 @@ header .container {
     align-items: center;
     flex-wrap: wrap;
     min-height: 100px;
-
 }
 
 header .logo img {
@@ -227,7 +246,6 @@ header nav ul {
 }
 
 @media(max-width:991px) {
-
 
     header .main-nav {
         display: none;
@@ -339,13 +357,11 @@ header nav ul li:hover ul {
 }
 
 
-
 header .two ul {
     width: 100%;
 }
 
 header .one ul {
-
     min-width: 192px;
 }
 
@@ -797,15 +813,14 @@ header .setting i:last-child {
 /* audio */
 .landing .quality-audio {
     position: absolute;
-    left: 60.5rem;
+    left: 50.5%;
     top: 80%;
     transform: translate(-50%, -50%);
     display: flex;
     background-color: white;
     border-radius: 20px;
     padding: 10px 90px;
-
-
+    z-index: 1;
 }
 
 .landing .quality-audio i {
@@ -977,6 +992,7 @@ header .setting i:last-child {
 .help .imgs-container .box .caption h4 {
     font-weight: normal;
     margin-bottom: 10px;
+    color: black;
 }
 
 .help .imgs-container .box .caption p {
@@ -1322,6 +1338,63 @@ header .setting i:last-child {
     }
 }
 
+.contact .social {
+    margin-top: 30px;
+    width: 77%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+}
+
+.contact .social .icon {
+    width: 50px;
+    height: 50px;
+    background-color: hsl(28 100% 50% /36%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact .social p {
+    font-size: 17px;
+}
+
+.contact .social .icon i {
+    color: var(--main-color);
+    font-size: 25px;
+    text-align: center;
+
+}
+
+.contact .social p:nth-child(2) {
+    position: absolute;
+    top: 100%;
+    transform: translateY(-50%);
+}
+
+.contact .social p:nth-child(4) {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.contact .social p:nth-child(6) {
+    position: absolute;
+    left: 100%;
+    top: 100%;
+    transform: translate(-100%, -50%);
+}
+
+@media(max-width:767px){
+    .contact .social {
+        width: 100%;        
+    }
+}
 /* end contact */
 /* start footer */
 .footer {
@@ -1394,5 +1467,3 @@ header .setting i:last-child {
 }
 
 /* end footer */
-/* start keyframes */
-/* end keyframes*/
