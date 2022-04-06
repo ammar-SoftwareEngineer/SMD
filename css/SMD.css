@@ -272,13 +272,11 @@ header nav ul {
         cursor: pointer;
         margin-left: -25px;
     }
-
-    header .main-nav {
-        /* display: flex;
-        text-align: center;
-        flex-direction: column;
-        align-items: center;
-        position: absolute; */
+header nav{
+    position: relative;
+}
+    header nav .main-nav {
+        position: absolute;
         background-color: white;
         height: 90.5vh;
         right: 26%;
@@ -289,10 +287,16 @@ header nav ul {
         z-index: 90;
         width: 250px;
     }
+    header .toggle-button:hover nav {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        transform: translateY(0);
+        text-align: center;
+    }
 
-    /* .nav-active{
-        transform: translateX(0);
-    } */
     header nav ul li ul {
         position: absolute;
         right: 100%;
@@ -683,6 +687,7 @@ header .setting i:last-child {
     margin-left: 20px;
     color: #24262B;
 }
+
 
 .landing .download ul li i.one {
     font-size: 20px;
@@ -1134,40 +1139,55 @@ header .setting i:last-child {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    column-gap: 100px;
+    row-gap: 150px;
 }
 
 .team .box {
     position: relative;
-    top: 105px;
+    top: 85px;
     text-align: center;
 
 }
 
 .team .box-team {
     position: relative;
-
 }
 
-.team .box-team .team-deveolp {
-    background-color: white;
-    height: 300px;
+.team .box-team .team-deveolp:hover .size {
+    height: 150px;
     width: 200px;
+    margin-top: 80px;
     border-radius: 15px;
+    display: block;
+    background-color: white;
+    transition: 0.3s ease-out;
+    transition-delay: 1s;
+}
 
+.team .box-team .team-deveolp:hover img {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    transition: 0.5s ease-in-out;
 }
 
 .team .box-team .team-deveolp .size {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
+    display: none;
+    background-color: #f8f8f8;
+
 }
 
-.team .box-team .team-deveolp .size img {
+.team .box-team .team-deveolp img {
     width: 150px;
     height: 150px;
     border-radius: 100%;
+    margin-top: 20px;
 }
 
 .team .box-team .team-deveolp .size h5 {
@@ -1178,6 +1198,7 @@ header .setting i:last-child {
 .team .box-team .team-deveolp .size p {
     font-size: 14px;
     margin-bottom: 25px;
+
 }
 
 @media(max-width:767px) {
@@ -1187,11 +1208,48 @@ header .setting i:last-child {
         margin-top: 80px;
     }
 
-    .team .box-team .team-deveolp .size img {
+    .team .box-team .team-deveolp {
+        width: 200px;
+        height: 0;
+        border-radius: 15px;
+    }
+
+    .team .box-team .team-deveolp img {
         width: 100px;
         height: 100px;
         border-radius: 100%;
         margin-top: -50px;
+    }
+
+    .team .box-team .team-deveolp .size {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        display: none;
+        background-color: #f8f8f8;
+    }
+
+    .team .box-team .team-deveolp:hover .size {
+        height: 120px;
+        width: 150px;
+        margin-top: -22px;
+        border-radius: 15px;
+        display: block;
+        transition: var(--main-transition);
+        background-color: white;
+    }
+
+    .team .box-team .team-deveolp:hover img {
+        background-color: white;
+        width: 150px;
+        height: 150px;
+        border-radius: 15px;
+        transition: 0.5s ease-in-out;
+    }
+
+    .team .box-team .team-deveolp {
+        height: 50px;
     }
 
     .team .box-team .team-deveolp .size h5 {
@@ -1200,7 +1258,7 @@ header .setting i:last-child {
 
     .team .box-team .team-deveolp .size p {
         font-size: 13px;
-        width: 250px;
+        text-align: center;
     }
 
     .team .box-team .team-deveolp {
@@ -1285,8 +1343,7 @@ header .setting i:last-child {
 
 @media(max-width:767px) {
     .contact .content .info {
-        order: -1;
-        text-align: center;
+        display: none;
     }
 }
 
@@ -1345,7 +1402,7 @@ header .setting i:last-child {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    
+
 }
 
 .contact .social .icon {
@@ -1390,11 +1447,12 @@ header .setting i:last-child {
     transform: translate(-100%, -50%);
 }
 
-@media(max-width:767px){
+@media(max-width:767px) {
     .contact .social {
-        width: 100%;        
+        width: 100%;
     }
 }
+
 /* end contact */
 /* start footer */
 .footer {
