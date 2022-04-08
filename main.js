@@ -7,3 +7,4 @@ function lightMode() {
   var element = document.body;
   element.className = "light-mode";
 }
+ 

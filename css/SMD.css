@@ -756,6 +756,7 @@ header .setting i:last-child {
     background-color: white;
     border-radius: 20px;
     padding: 10px 30px;
+    display: none;
 }
 
 .landing .download li.down:hover .quality-download {
@@ -832,6 +833,7 @@ header .setting i:last-child {
     border-radius: 20px;
     padding: 10px 90px;
     z-index: 1;
+    display:none;
 }
 
 .landing .quality-audio i {
@@ -892,7 +894,7 @@ header .setting i:last-child {
     background-color: white;
     border-radius: 20px;
     padding: 10px 30px;
-
+display: none;
 }
 
 .landing .quality-translate i {
@@ -1072,6 +1074,7 @@ margin-left: 70px;
         border: 1px solid #707070;
         padding: 10px;
         font-weight: bold;
+        cursor: pointer;
     }
 
     .about .questions ul li:first-child {
@@ -1088,6 +1091,7 @@ margin-left: 70px;
         margin-top: 0;
         margin-bottom: 0;
         color: var(--main-color);
+
     }
 
     .about .questions ul li i {
@@ -1169,12 +1173,14 @@ margin-left: 70px;
         align-items: center;
         column-gap: 100px;
         row-gap: 150px;
+        
     }
 
     .team .box {
         position: relative;
         top: 85px;
         text-align: center;
+        
 
     }
 
@@ -1208,6 +1214,7 @@ margin-left: 70px;
         transform: translate(-50%, 0%);
         display: none;
         background-color: #f8f8f8;
+        
 
     }
 
