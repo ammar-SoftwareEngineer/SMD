@@ -513,6 +513,8 @@ header .setting i:last-child {
     font-size: 18px;
     width: 48vw;
     height: 60px;
+    box-shadow: 10px 10px 10px hsl(0 0% 44% /44%) ;
+    box-shadow: 5px 5px 10px hsl(0 0% 44% /44%) inset;
 }
 
 .landing form .link:focus {
@@ -530,6 +532,8 @@ header .setting i:last-child {
     cursor: pointer;
     width: 180px;
     height: 60px;
+    box-shadow:10px 10px 10px hsl(0 0% 44% /24%);
+    box-shadow: 2px 2px 5px hsl(0 0% 44% /44%) inset;
 }
 
 .landing form i {
