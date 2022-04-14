@@ -80,15 +80,15 @@
       </div>
       <div class="download">
         <ul>
-          <li class="down"><i class="fas fa-download" ></i>تحميل MP4 او MP3 <i
+          <li class="down" onclick="openList1()"><i class="fas fa-download" ></i>تحميل MP4 او MP3 <i
               class="fas fa-arrow-circle-down one"></i></li>
-          <li class="audio"><i class="fas fa-file-audio"></i>التحويل الى موسيقى <i
+          <li class="audio" onclick="openList2()"><i class="fas fa-file-audio"></i>التحويل الى موسيقى <i
               class="fas fa-arrow-circle-down two"></i></li>
-          <li class="trans"><i class="fas fa-language"></i>ترجمة الفيديو <i
+          <li class="trans" onclick="openList3()"><i class="fas fa-language"></i>ترجمة الفيديو <i
               class="fas fa-arrow-circle-down three"></i></li>
         </ul>
       </div>
-      <div class="quality-download">
+      <div class="quality-download" id="ullist">
         <ul class="mp4">
           <div>MP4</div>
           <li>360P</li>
@@ -104,7 +104,7 @@
           <li>320k</li>
         </ul>
       </div>
-      <div class="quality-audio">
+      <div class="quality-audio" id="ullist1">
         <ul>
           <div>MP3</div>
           <li>70k</li>
@@ -113,7 +113,7 @@
           <li>320k</li>
         </ul>
       </div>
-      <div class="quality-translate">
+      <div class="quality-translate" id="ullist2">
         <ul class="mp4-two">
           <div>MP4</div>
           <li>360P</li>
@@ -209,16 +209,16 @@
         <div class="questions">
           <h3>ما هي الأسئلة التي يريد الناس أن يعرفوها عن الموقع؟</h3>
           <ul>
-            <li>هل يمكن تنزيل مقاطع فيديو من مواقع التواصل الاجتماعي وتحويلها إلى موسيقى؟ <i class="fas fa-plus"></i></li>
-            <p> الجواب: نعم ، وبجودة عالية أيضا</p>
-            <li>هل الموقع يدعم جميع اللغات؟<i class="fas fa-plus"></i></li>
-            <p>الإجابة: لا يدعم كل اللغات لكننا سنفعله قريبًا</p>
-            <li>كم مرة يمكنني التنزيل؟ <i class="fas fa-plus"></i></li>
-            <p>الجواب: غير محدود</p>
-            <li>هل يدعم الموقع جودة التحميل 4k؟<i class="fas fa-plus"></i></li>
-            <p> الإجابة: لا يدعم 4K لكننا سنفعله قريبًا</p>
-            <li>كيف يتم تحميل الموقع بسرعة؟<i class="fas fa-plus"></i></li>
-            <p>الإجابة: نعم ، يمكنك تنزيل أكثر من مقطع في نفس الوقت</p>
+            <li onclick="plusOpen()">هل يمكن تنزيل مقاطع فيديو من مواقع التواصل الاجتماعي وتحويلها إلى موسيقى؟ <i class="fas fa-plus" id="arrow"></i></li>
+            <p id="my-p"> الجواب: نعم ، وبجودة عالية أيضا</p>
+            <li onclick="plusOpen1()">هل الموقع يدعم جميع اللغات؟<i class="fas fa-plus"  id="arrow1"></i></li>
+            <p id="my-p1">الإجابة: لا يدعم كل اللغات لكننا سنفعله قريبًا</p>
+            <li onclick="plusOpen2()">كم مرة يمكنني التنزيل؟ <i class="fas fa-plus"id="arrow2"></i></li>
+            <p id="my-p2">الجواب: غير محدود</p>
+            <li onclick="plusOpen3()">هل يدعم الموقع جودة التحميل 4k؟<i class="fas fa-plus" id="arrow3"></i></li>
+            <p id="my-p3"> الإجابة: لا يدعم 4K لكننا سنفعله قريبًا</p>
+            <li onclick="plusOpen4()">كيف يتم تحميل الموقع بسرعة؟<i class="fas fa-plus" id="arrow4"></i></li>
+            <p id="my-p4">الإجابة: نعم ، يمكنك تنزيل أكثر من مقطع في نفس الوقت</p>
           </ul>
         </div>
         <div class="images">

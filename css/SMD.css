@@ -1076,7 +1076,7 @@ margin-left: 70px;
 
     .about .questions ul li {
         border: 1px solid #707070;
-        padding: 10px;
+        padding: 15px;
         font-weight: bold;
         cursor: pointer;
     }
@@ -1091,15 +1091,16 @@ margin-left: 70px;
 
     .about .questions ul p {
         border: 1px solid #707070;
-        padding: 10px;
+        padding: 15px;
         margin-top: 0;
         margin-bottom: 0;
         color: var(--main-color);
+        display: none;
     }
 
     .about .questions ul li i {
         position: absolute;
-        left: 94%;
+        left: 95%;
     }
 
     .about .images img {
