@@ -472,13 +472,13 @@ header .setting i:last-child {
 }
 
 .landing .main-text {
-    position: relative;
+    position: absolute;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    bottom: 200px;
+    top: 10%;
     max-width: 100%;
 
 
@@ -1339,7 +1339,7 @@ display: none;
     }
 
     .team .box {
-        top: 65px;
+        top: 70px;
     }
 
     .team .box .container {
