@@ -1170,6 +1170,9 @@ display: none;
     .about .questions ul li, p {
         font-size: 14px;
     }
+    .about .questions ul p {
+        display: none;
+    }
 
 }
 
