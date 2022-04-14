@@ -425,14 +425,13 @@ header .setting i:last-child {
 /* end header */
 /* start landing  */
 .landing {
-    /* position: relative; */
+    position: relative;
     background-image: url("../images/Rect\ Light.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .landing .container {
-    position: relative;
     display: flex;
     padding-bottom: 120px;
     align-items: center;
@@ -446,7 +445,7 @@ header .setting i:last-child {
     position: absolute;
     width: 100%;
     height: 40rem;
-    top: 43%;
+    top: 36%;
     background-color: hsl(0 0% 44% /60%);
     opacity: 80%;
     clip-path: polygon(50% 100%, 100% 0, 0 0);
@@ -454,7 +453,7 @@ header .setting i:last-child {
 
 @media only screen and (max-width:767px) {
     .landing::before {
-        top:48%;
+        top: 40%;
         height: 35rem;
     }
 }
@@ -569,8 +568,9 @@ header .setting i:last-child {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    top: 25px;
+    position: absolute;
+    top: 42%;
+    left: 50%;
     transform: translateX(-60%);
     height: 50px;
     width: 50px;
@@ -646,10 +646,10 @@ header .setting i:last-child {
 
 @media(max-width:767px) {
     .landing .social {
-        top: 50px;
-        left: 15px;
+        top: 47%;
+        left: 50%;
         height: 35px;
-        width: 35px;
+        width: 35x;
     }
 
     .landing .social .icon {
