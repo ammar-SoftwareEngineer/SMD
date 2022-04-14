@@ -457,15 +457,17 @@ header .setting i:last-child {
         height: 35rem;
     }
 }
-
+@media(min-width:1200px){
+    
+}
 .landing .main-text {
-    position: relative;
+    position: absolute;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    bottom: 200px;
+    top: 10%;
     max-width: 100%;
 
 }
@@ -483,10 +485,6 @@ header .setting i:last-child {
 }
 
 @media(max-width:767px) {
-    .landing .main-text {
-        bottom: 180px;
-    }
-
     .landing .main-text h1 {
         font-size: 1.8rem;
     }
@@ -1307,7 +1305,7 @@ margin-left: 70px;
         }
 
         .team .box {
-            top: 65px;
+            top: 75px;
         }
 
         .team .box .container {

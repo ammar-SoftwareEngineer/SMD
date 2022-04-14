@@ -33,7 +33,7 @@ function openList2() {
 function openList3() {
   let list = document.getElementById("ullist2");
 
-  if (list.style.display == "none") {
+  if (list.style.display === "none") {
     list.style.display = "flex";
   } else {
     list.style.display = "none";
@@ -43,7 +43,7 @@ function openList3() {
 
 // about questions plus
 function plusOpen() {
-  let arrow = document.getElementById("arrow");
+  let arrow = document.getElementById("plus");
   let myP = document.getElementById("my-p");
 
   if (myP.style.display == "none") {
@@ -55,7 +55,7 @@ function plusOpen() {
   }
 }
 function plusOpen1() {
-  let arrow = document.getElementById("arrow1");
+  let arrow = document.getElementById("plus1");
   let myP = document.getElementById("my-p1");
 
   if (myP.style.display == "none") {
@@ -67,7 +67,7 @@ function plusOpen1() {
   }
 }
 function plusOpen2() {
-  let arrow = document.getElementById("arrow2");
+  let arrow = document.getElementById("plus2");
   let myP = document.getElementById("my-p2");
 
   if (myP.style.display == "none") {
@@ -79,7 +79,7 @@ function plusOpen2() {
   }
 }
 function plusOpen3() {
-  let arrow = document.getElementById("arrow3");
+  let arrow = document.getElementById("plus3");
   let myP = document.getElementById("my-p3");
 
   if (myP.style.display == "none") {
@@ -91,7 +91,7 @@ function plusOpen3() {
   }
 }
 function plusOpen4() {
-  let arrow = document.getElementById("arrow4");
+  let arrow = document.getElementById("plus4");
   let myP = document.getElementById("my-p4");
 
   if (myP.style.display == "none") {
