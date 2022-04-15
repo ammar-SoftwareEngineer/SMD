@@ -11,7 +11,7 @@ function lightMode() {
 
 // landing download open list
 function openList1() {
-  let list = document.getElementById("ullist");
+  let list = document.querySelector(".quality-download");
 
   if (list.style.display == "none") {
     list.style.display = "flex";
@@ -21,7 +21,7 @@ function openList1() {
 }
 
 function openList2() {
-  let list = document.getElementById("ullist1");
+  let list = document.querySelector(".quality-audio");
 
   if (list.style.display == "none") {
     list.style.display = "flex";
@@ -31,7 +31,7 @@ function openList2() {
 }
 
 function openList3() {
-  let list = document.getElementById("ullist2");
+  let list = document.querySelector(".quality-translate");
 
   if (list.style.display === "none") {
     list.style.display = "flex";
