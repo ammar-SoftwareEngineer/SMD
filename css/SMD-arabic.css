@@ -1,7 +1,7 @@
 @font-face {
     font-family: myFirstFont;
     src: url(../fonts/TheSans-Bold.otf);
- }
+}
 
 * {
     -webkit-box-sizing: border-box;
@@ -37,7 +37,7 @@ html {
 }
 
 body {
-   font-family:myFirstFont ; 
+    font-family: myFirstFont;
 }
 
 /* start dark mode */
@@ -498,9 +498,6 @@ header .setting i:last-child {
 }
 
 @media(max-width:767px) {
-    .landing .main-text {
-        bottom: 180px;
-    }
 
     .landing .main-text h1 {
         font-size: 1.8rem;
@@ -528,7 +525,7 @@ header .setting i:last-child {
     font-size: 18px;
     width: 48vw;
     height: 60px;
-    box-shadow: 10px 10px 10px hsl(0 0% 44% /44%) ;
+    box-shadow: 10px 10px 10px hsl(0 0% 44% /44%);
     box-shadow: 5px 5px 10px hsl(0 0% 44% /44%) inset;
 }
 
@@ -547,7 +544,7 @@ header .setting i:last-child {
     cursor: pointer;
     width: 180px;
     height: 60px;
-    box-shadow:10px 10px 10px hsl(0 0% 44% /24%);
+    box-shadow: 10px 10px 10px hsl(0 0% 44% /24%);
     box-shadow: 5px 5px 5px hsl(0 0% 44% /44%) inset;
 }
 
@@ -561,7 +558,7 @@ header .setting i:last-child {
 @media (max-width:767px) {
 
     .landing form .container {
-        top: 50%;
+        top: 45%;
     }
 
     .landing form .link {
@@ -693,7 +690,7 @@ header .setting i:last-child {
     left: 50%;
     top: 60%;
     transform: translate(-50%, -50%);
-    
+
 }
 
 .landing .download ul {
@@ -830,12 +827,13 @@ header .setting i:last-child {
     font-size: 17px;
     text-align: center;
     color: #24262B;
-    
+
 }
 
 @media(max-width:991px) {
     .landing .quality-download {
         display: none;
+        left: 50%;
     }
 
     .landing .quality-download i {
@@ -963,7 +961,7 @@ header .setting i:last-child {
     font-size: 17px;
     text-align: center;
     color: #24262B;
-    
+
 }
 
 @media(max-width:991px) {
@@ -978,7 +976,7 @@ header .setting i:last-child {
     }
 
     .landing .quality-translate {
-        left: 50%;
+        right: -15%;
         padding: 20px;
         display: none;
     }
@@ -1126,7 +1124,7 @@ header .setting i:last-child {
     margin-top: 0;
     margin-bottom: 0;
     color: var(--main-color);
-display: none;
+    display: none;
 }
 
 .about .questions ul li i {
@@ -1170,6 +1168,7 @@ display: none;
     .about .questions ul li, p {
         font-size: 14px;
     }
+
     .about .questions ul p {
         display: none;
     }
@@ -1524,13 +1523,14 @@ display: none;
     .contact .social {
         width: 100%;
     }
+
     .contact .social p:nth-child(6) {
         position: absolute;
         right: 72%;
         top: 100%;
         transform: translate(-100%, -50%);
     }
-    
+
 }
 
 /* end contact */
