@@ -285,7 +285,7 @@ header nav ul {
         color: var(--fourty-color);
         font-size: 22px;
         cursor: pointer;
-        margin-left: -25px;
+        margin-right: -25px;
     }
 
     header nav {
