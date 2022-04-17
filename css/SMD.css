@@ -432,15 +432,6 @@ header .setting i:last-child {
     background-size: cover;
 }
 
-.landing .container {
-    display: flex;
-    padding-bottom: 120px;
-    align-items: center;
-    justify-content: center;
-    min-height: calc(100vh - 100px);
-
-}
-
 .landing::before {
     content: "";
     position: absolute;
@@ -459,17 +450,25 @@ header .setting i:last-child {
     }
 }
 
+.landing .container {
+    display: flex;
+    padding-bottom: 120px;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 100px);
+    position: relative;
+}
 
 .landing .main-text {
     position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    top: 10%;
-    max-width: 100%;
-
+    max-width: fit-content;
 }
 
 .landing .main-text h1 {
@@ -482,6 +481,7 @@ header .setting i:last-child {
     margin-top: 0;
     color: white;
     font-size: 1.5rem;
+    margin-bottom: 50px;
 }
 
 @media(max-width:767px) {
@@ -498,9 +498,9 @@ header .setting i:last-child {
 
 .main-text form {
     position: absolute;
-    top: 100%;
+    bottom: 0%;
     left: 50%;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, 100%);
     display: flex;
 }
 
@@ -542,9 +542,6 @@ header .setting i:last-child {
 }
 
 @media (max-width:767px) {
-    .landing form .container {
-        top: 45%;
-    }
 
     .landing form .link {
         font-size: 16px;
@@ -568,12 +565,7 @@ header .setting i:last-child {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 42%;
-    left: 50%;
-    transform: translateX(-60%);
-    height: 50px;
-    width: 50px;
+    margin-top: 30px;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease-out;
@@ -645,10 +637,9 @@ header .setting i:last-child {
 
 @media(max-width:767px) {
     .landing .social {
-        top: 47%;
-        left: 50%;
+        margin-top: 65px;
         height: 35px;
-        width: 35x;
+        width: 35px;
     }
 
     .landing .social .icon {
@@ -750,9 +741,9 @@ header .setting i:last-child {
 /* quality download */
 .landing .quality-download {
     position: absolute;
-    left: 37.5rem;
+    right: 67%;
     top: 80%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
     display: flex;
     background-color: white;
     border-radius: 20px;
@@ -810,6 +801,9 @@ header .setting i:last-child {
 @media(max-width:991px) {
     .landing .quality-download {
         display: none;
+        right:50%;
+        top: 75%;
+        transform: translate(50% , -50%);
     }
 
     .landing .quality-download i {
@@ -888,7 +882,7 @@ header .setting i:last-child {
 /* translate */
 .landing .quality-translate {
     position: absolute;
-    left: 70%;
+    left: 82.5%;
     top: 80%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -952,6 +946,8 @@ header .setting i:last-child {
 
     .landing .quality-translate {
         left: 50%;
+        top: 45%;
+        transform: translate(-50%,50%);
         padding: 20px;
         display: none;
     }
@@ -1187,8 +1183,6 @@ header .setting i:last-child {
     position: relative;
     top: 85px;
     text-align: center;
-
-
 }
 
 .team .box-team {
@@ -1221,7 +1215,6 @@ header .setting i:last-child {
     display: none;
     background-color: #f8f8f8;
 
-
 }
 
 .team .box-team .team-deveolp img {
@@ -1241,86 +1234,46 @@ header .setting i:last-child {
     margin-bottom: 25px;
 
 }
+@media(max-width:991px){
+    .team .landing-team {
+        min-height: 125vh;
+    }
+    .team .landing-team::before {
+        height: 60rem;
+        top: 26%;
+    }
+
+
+    
+}
 
 @media(max-width:767px) {
-    .team h4 {
-        font-size: 30px;
-        margin-bottom: 30px;
-        margin-top: 80px;
+    .team .box .container {
+        column-gap: 100px;
+        row-gap: 120px;
+    
     }
-
-    .team .box-team .team-deveolp {
-        width: 200px;
-        height: 0;
-        border-radius: 15px;
+    .team .landing-team::before {
+        height: 50rem;
+        top: 35%;
     }
-
+    .team .box {
+        position: relative;
+        top: 20px;
+    }
     .team .box-team .team-deveolp img {
         width: 100px;
         height: 100px;
-        border-radius: 100%;
-        margin-top: -50px;
     }
-
-    .team .box-team .team-deveolp .size {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, 0%);
-        display: none;
-        background-color: #f8f8f8;
-    }
-
     .team .box-team .team-deveolp:hover .size {
         height: 120px;
-        width: 150px;
-        margin-top: -22px;
-        border-radius: 15px;
-        display: block;
-        transition: var(--main-transition);
-        background-color: white;
+        width: 160px;
+        margin-top: 55px;
     }
-
+    
     .team .box-team .team-deveolp:hover img {
-        background-color: white;
-        width: 150px;
-        height: 150px;
-        border-radius: 15px;
-        transition: 0.5s ease-in-out;
-    }
-
-    .team .box-team .team-deveolp {
-        height: 50px;
-    }
-
-    .team .box-team .team-deveolp .size h5 {
-        font-size: 13px;
-    }
-
-    .team .box-team .team-deveolp .size p {
-        font-size: 13px;
-        text-align: center;
-    }
-
-    .team .box-team .team-deveolp {
-        height: 200px;
-    }
-
-    .team .box {
-        top: 75px;
-    }
-
-    .team .box .container {
-        gap: 60px;
-    }
-
-    .team .landing-team {
-        min-height: 220vh;
-    }
-
-    .team .landing-team::before {
-        height: 92.5rem;
-        top: 26%;
+        width: 160px;
+        height: 120px;
     }
 }
 
