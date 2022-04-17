@@ -285,29 +285,27 @@ header nav ul {
         position: absolute;
         background-color: white;
         height: 90.5vh;
-        right: 26%;
-        top: 10vh;
+        right: 135px;
+        top: 6vh;
         text-align: center;
+        flex-direction: column;
         padding: 16px 0;
         transform: translateX(100%);
         z-index: 90;
         width: 250px;
     }
-
-    header .toggle-button:hover nav {
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        align-items: center;
-        background-color: white;
-        transform: translateY(0);
-        text-align: center;
-    }
-
     header nav ul li ul {
         position: absolute;
         right: 100%;
         top: 0;
+    }
+}
+@media(max-width:767px){
+    header nav .main-nav {
+        position: absolute;
+        background-color: white;
+        height: 90.5vh;
+        right: 235px;
     }
 }
 
@@ -1242,9 +1240,6 @@ header .setting i:last-child {
         height: 60rem;
         top: 26%;
     }
-
-
-    
 }
 
 @media(max-width:767px) {

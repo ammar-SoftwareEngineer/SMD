@@ -10,6 +10,15 @@ function lightMode() {
 }
 
 // landing download open list
+function openMenu() {
+  let menu = document.querySelector(".main-nav");
+
+  if (menu.style.display == "none") {
+    menu.style.display = "flex";
+  } else {
+    menu.style.display = "none";
+  }
+}
 function openList1() {
   let list = document.querySelector(".quality-download");
 
