@@ -1504,7 +1504,7 @@ header .setting i:last-child {
 
     .contact .social p:nth-child(6) {
         position: absolute;
-        right: 72%;
+        right: 71%;
         top: 100%;
         transform: translate(-100%, -50%);
     }
