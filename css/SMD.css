@@ -298,6 +298,12 @@ header nav ul {
         position: absolute;
         right: 100%;
         top: 0;
+
+    }
+    header .setting i:last-child{
+        padding: 5px;
+        font-size: 18px;
+        transform: rotate(90deg);
     }
 
 }
