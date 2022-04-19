@@ -582,6 +582,10 @@ header .setting i:last-child {
 
 
 .landing .social {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50% ,-50%);
     display: flex;
     justify-content: center;
     align-items: center;
