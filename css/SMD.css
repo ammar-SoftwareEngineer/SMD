@@ -294,20 +294,25 @@ header nav ul {
         z-index: 90;
         width: 250px;
     }
+
     header nav ul li ul {
         position: absolute;
         right: 100%;
         top: 0;
 
     }
-    header .setting i:last-child{
+
+    header .setting i:last-child {
         padding: 5px;
         font-size: 18px;
         transform: rotate(90deg);
+        position: absolute;
+        left: 0;
     }
 
 }
-@media(max-width:767px){
+
+@media(max-width:767px) {
     header nav .main-nav {
         position: absolute;
         background-color: white;
@@ -806,9 +811,9 @@ header .setting i:last-child {
 @media(max-width:991px) {
     .landing .quality-download {
         display: none;
-        right:50%;
+        right: 50%;
         top: 75%;
-        transform: translate(50% , -50%);
+        transform: translate(50%, -50%);
     }
 
     .landing .quality-download i {
@@ -952,7 +957,7 @@ header .setting i:last-child {
     .landing .quality-translate {
         left: 50%;
         top: 45%;
-        transform: translate(-50%,50%);
+        transform: translate(-50%, 50%);
         padding: 20px;
         display: none;
     }
@@ -1239,10 +1244,12 @@ header .setting i:last-child {
     margin-bottom: 25px;
 
 }
-@media(max-width:991px){
+
+@media(max-width:991px) {
     .team .landing-team {
         min-height: 125vh;
     }
+
     .team .landing-team::before {
         height: 60rem;
         top: 26%;
@@ -1253,26 +1260,30 @@ header .setting i:last-child {
     .team .box .container {
         column-gap: 100px;
         row-gap: 120px;
-    
+
     }
+
     .team .landing-team::before {
         height: 50rem;
         top: 35%;
     }
+
     .team .box {
         position: relative;
         top: 20px;
     }
+
     .team .box-team .team-deveolp img {
         width: 100px;
         height: 100px;
     }
+
     .team .box-team .team-deveolp:hover .size {
         height: 120px;
         width: 160px;
         margin-top: 45px;
     }
-    
+
     .team .box-team .team-deveolp:hover img {
         width: 160px;
         height: 120px;
