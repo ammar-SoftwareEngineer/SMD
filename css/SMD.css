@@ -709,6 +709,7 @@ header .setting i:last-child {
     font-size: 18px;
     margin-left: 20px;
     color: #24262B;
+    
 }
 
 
@@ -821,6 +822,7 @@ header .setting i:last-child {
     font-size: 17px;
     text-align: center;
     color: #24262B;
+    font-weight: bold;
 }
 
 .landing .quality-download ul li:hover {
@@ -887,6 +889,7 @@ header .setting i:last-child {
     font-size: 17px;
     text-align: center;
     color: #24262B;
+    font-weight: bold;
 }
 
 .landing .quality-audio ul li:hover {
@@ -940,6 +943,7 @@ header .setting i:last-child {
     margin-top: 10px;
     font-weight: bold;
     color: #24262B;
+    
 }
 
 .landing .quality-translate .mp4-two {
@@ -954,6 +958,7 @@ header .setting i:last-child {
     border-radius: 20px;
     margin-top: 10px;
     color: #24262B;
+   
 }
 
 .landing .quality-translate ul li {
@@ -966,6 +971,7 @@ header .setting i:last-child {
     font-size: 17px;
     text-align: center;
     color: #24262B;
+    font-weight: bold;
 }
 
 .landing .quality-translate ul li:hover {
