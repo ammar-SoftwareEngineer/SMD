@@ -842,6 +842,10 @@ header .setting i:last-child {
     color: #24262B;
 
 }
+.landing .quality-download ul li:hover {
+    background-color: #f79d4e;
+    cursor: pointer;
+}
 
 @media(max-width:991px) {
     .landing .quality-download {
@@ -901,7 +905,10 @@ header .setting i:last-child {
     text-align: center;
     color: #24262B;
 }
-
+.landing .quality-audio ul li:hover {
+    background-color: #f79d4e;
+    cursor: pointer;
+}
 @media(max-width:991px) {
     .landing .quality-audio i {
         font-size: 20px;
@@ -976,7 +983,10 @@ header .setting i:last-child {
     color: #24262B;
 
 }
-
+.landing .quality-translate ul li:hover {
+    background-color: #f79d4e;
+    cursor: pointer;
+}
 @media(max-width:991px) {
     .landing .quality-translate i {
         font-size: 20px;
