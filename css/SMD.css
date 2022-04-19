@@ -440,6 +440,7 @@ header .setting i:last-child {
     background-image: url("../images/Rect\ Light.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
 .landing::before {
@@ -451,6 +452,7 @@ header .setting i:last-child {
     background-color: hsl(0 0% 44% /60%);
     opacity: 80%;
     clip-path: polygon(50% 100%, 100% 0, 0 0);
+    
 }
 
 @media only screen and (max-width:767px) {
@@ -467,6 +469,7 @@ header .setting i:last-child {
     justify-content: center;
     min-height: calc(100vh - 100px);
     position: relative;
+    
 }
 
 .landing .main-text {
@@ -552,6 +555,13 @@ header .setting i:last-child {
 }
 
 @media (max-width:767px) {
+    .main-text form {
+        position: absolute;
+        bottom: -80px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+    }
 
     .landing form .link {
         font-size: 16px;
