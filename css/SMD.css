@@ -440,7 +440,7 @@ header .setting i:last-child {
     background-image: url("../images/Rect\ Light.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
 
 .landing::before {
@@ -452,7 +452,7 @@ header .setting i:last-child {
     background-color: hsl(0 0% 44% /60%);
     opacity: 80%;
     clip-path: polygon(50% 100%, 100% 0, 0 0);
-    
+
 }
 
 @media only screen and (max-width:767px) {
@@ -469,7 +469,7 @@ header .setting i:last-child {
     justify-content: center;
     min-height: calc(100vh - 100px);
     position: relative;
-    
+
 }
 
 .landing .main-text {
@@ -585,7 +585,7 @@ header .setting i:last-child {
     position: absolute;
     left: 50%;
     top: 40%;
-    transform: translate(-50% ,-50%);
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -642,7 +642,7 @@ header .setting i:last-child {
 }
 
 .landing .social .icon:nth-child(5) {
-    
+
     background-color: #F20FA6;
 
 }
@@ -823,6 +823,11 @@ header .setting i:last-child {
     color: #24262B;
 }
 
+.landing .quality-download ul li:hover {
+    background-color: #f79d4e;
+    cursor: pointer;
+}
+
 @media(max-width:991px) {
     .landing .quality-download {
         display: none;
@@ -882,6 +887,11 @@ header .setting i:last-child {
     font-size: 17px;
     text-align: center;
     color: #24262B;
+}
+
+.landing .quality-audio ul li:hover {
+    background-color: #f79d4e;
+    cursor: pointer;
 }
 
 @media(max-width:991px) {
@@ -956,6 +966,11 @@ header .setting i:last-child {
     font-size: 17px;
     text-align: center;
     color: #24262B;
+}
+
+.landing .quality-translate ul li:hover {
+    background-color: #f79d4e;
+    cursor: pointer;
 }
 
 @media(max-width:991px) {
