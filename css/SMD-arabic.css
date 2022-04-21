@@ -451,17 +451,9 @@ header .setting i:last-child {
     background-image: url("../images/Rect\ Light.svg");
     background-repeat: no-repeat;
     background-size: cover;
-
-}
-
-.landing .container {
-    display: flex;
-    padding-bottom: 120px;
-    align-items: center;
-    justify-content: center;
     min-height: calc(100vh - 100px);
-
 }
+
 
 .landing::before {
     content: "";
@@ -480,18 +472,23 @@ header .setting i:last-child {
         height: 35rem;
     }
 }
+.landing .container {
+    display: flex;
+    padding-bottom: 120px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 
+}
 .landing .main-text {
     position: absolute;
+    top: 70%;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    top: 10%;
-    max-width: 100%;
-
-
+    max-width: fit-content;
 }
 
 .landing .main-text h1 {
@@ -506,7 +503,11 @@ header .setting i:last-child {
     color: white;
     font-size: 1.5rem;
 }
-
+@media (max-width:991px) {
+    .landing .main-text {
+        top: 50%;
+    }
+}
 @media(max-width:767px) {
 
     .landing .main-text h1 {
@@ -515,16 +516,19 @@ header .setting i:last-child {
 
     .landing .main-text p {
         font-size: 1.2rem;
+        margin-bottom: 30px;
     }
-
+    .landing .main-text {
+        top: 85%;
+    }
 }
 
 
 .main-text form {
     position: absolute;
-    top: 100%;
+    bottom: -25px;
     left: 50%;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, 100%);
     display: flex;
 }
 
@@ -566,10 +570,11 @@ header .setting i:last-child {
 }
 
 @media (max-width:767px) {
-
     .main-text form {
         position: absolute;
-        bottom: -120px;
+        bottom: -85px;
+        left: 50%;
+        transform: translateX(-50%);
         display: flex;
     }
 
@@ -592,15 +597,14 @@ header .setting i:last-child {
 
 
 .landing .social {
+    position: absolute;
+    left: 50%;
+    top: 320px;
+    transform: translate(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 42%;
-    left: 50%;
-    transform: translateX(-60%);
-    height: 50px;
-    width: 50px;
+    margin-top: 30px;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease-out;
@@ -674,10 +678,9 @@ header .setting i:last-child {
 
 @media(max-width:767px) {
     .landing .social {
-        top: 45%;
-        left: 50%;
+        margin-top: 40px;
         height: 35px;
-        width: 35x;
+        width: 35px;
     }
 
     .landing .social .icon {
@@ -701,7 +704,7 @@ header .setting i:last-child {
 .landing .download {
     position: absolute;
     left: 50%;
-    top: 60%;
+    top: 500px;
     transform: translate(-50%, -50%);
 
 }
@@ -753,7 +756,7 @@ header .setting i:last-child {
 
     .landing .download {
         left: 47%;
-        top: 75%;
+        top: 560px;
     }
 
     .landing .download ul li {
@@ -785,8 +788,8 @@ header .setting i:last-child {
 /* quality download */
 .landing .quality-download {
     position: absolute;
-    left: 70%;
-    top: 80%;
+    left: 82.5%;
+    top: 666px;
     transform: translate(-50%, -50%);
     display: flex;
     background-color: white;
@@ -851,6 +854,7 @@ header .setting i:last-child {
     .landing .quality-download {
         display: none;
         left: 50%;
+        top: 540px;
     }
 
     .landing .quality-download i {
@@ -867,8 +871,8 @@ header .setting i:last-child {
 /* audio */
 .landing .quality-audio {
     position: absolute;
-    left: 50.5%;
-    top: 80%;
+    left: 51%;
+    top: 666px;
     transform: translate(-50%, -50%);
     display: flex;
     background-color: white;
@@ -923,6 +927,7 @@ header .setting i:last-child {
     .landing .quality-audio {
         position: absolute;
         left: 50%;
+        top: 540px;
         padding: 20px;
         display: none;
     }
@@ -932,8 +937,8 @@ header .setting i:last-child {
 /* translate */
 .landing .quality-translate {
     position: absolute;
-    right: 62.5rem;
-    top: 80%;
+    right: 39.4rem;
+    top: 666px;
     transform: translate(-50%, -50%);
     display: flex;
     background-color: white;
@@ -1002,6 +1007,7 @@ header .setting i:last-child {
         right: -15%;
         padding: 20px;
         display: none;
+        top: 540px;
     }
 }
 
@@ -1446,16 +1452,22 @@ header .setting i:last-child {
     margin-right: 120px;
 }
 
-@media(max-width:767px) {
+@media(max-width:991px) {
     .contact .content .info address {
         margin-bottom: 40px;
-        margin-right: 25px;
+        width: 150px;
+        margin-left: 0;
+        margin-right: 50px;
+        font-size: 15px;
+    }
+    .contact .content .info .phone {
+        margin-right: 50px;
     }
 }
 
 .contact .social {
     margin-top: 30px;
-    width: 77%;
+    width: 76.5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1506,6 +1518,15 @@ header .setting i:last-child {
 }
 
 @media(max-width:991px) {
+    .contact .social {
+        margin-top: 30px;
+        width: 72%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    
+    }
     .contact .social p:nth-child(6) {
         position: absolute;
         right: 81%;

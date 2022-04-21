@@ -475,7 +475,6 @@ header .setting i:last-child {
 .landing .main-text {
     position: absolute;
     top: 70%;
-    /* transform: translateY(-50%); */
     text-align: center;
     display: flex;
     justify-content: center;
@@ -498,14 +497,7 @@ header .setting i:last-child {
 }
 @media (max-width:991px) {
     .landing .main-text {
-        position: absolute;
         top: 50%;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        max-width: fit-content;
     }
 }
 @media(max-width:767px) {
@@ -1433,16 +1425,7 @@ header .setting i:last-child {
     margin-top: 90px;
 }
 
-@media(max-width:767px) {
-    .contact .content .info h4:nth-of-type(2) {
-        margin-top: 30px;
-        margin-left: -25px;
-    }
 
-    .contact .content .info .phone {
-        margin-left: -50px;
-    }
-}
 
 .contact .content .info address {
     color: #777;
@@ -1450,16 +1433,25 @@ header .setting i:last-child {
     margin-left: 50px;
 }
 
-@media(max-width:767px) {
-    .contact .content .info address {
-        margin-bottom: 40px;
-        margin-left: -25px;
+@media(max-width:991px) {
+  
+    .contact .content .info h4 {
+        margin-left: 20px;
+    
     }
+    .contact .content .info .phone {
+        margin-left: 30px;
+    }
+    .contact .content .info address {
+        font-size: 15px;
+        margin-left: 24px;
+    }
+    
 }
 
 .contact .social {
     margin-top: 30px;
-    width: 77%;
+    width: 76.5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
