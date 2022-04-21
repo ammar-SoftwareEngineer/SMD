@@ -9,16 +9,18 @@ function lightMode() {
   element.className = "light-mode";
 }
 
-// landing download open list
+// open menu page
 function openMenu() {
   let menu = document.querySelector(".main-nav");
 
   if (menu.style.display == "none") {
     menu.style.display = "flex";
-  } else {
+  } else{
     menu.style.display = "none";
-  }
+  } 
 }
+
+// landing download open list
 function openList1() {
   let list = document.querySelector(".quality-download");
 
@@ -49,7 +51,6 @@ function openList3() {
   }
 }
 
-
 // about questions plus
 function plusOpen() {
   let arrow = document.getElementById("plus");
@@ -57,10 +58,12 @@ function plusOpen() {
 
   if (myP.style.display == "none") {
     myP.style.display = "block";
-    arrow.style.cssText="transform: rotate(45deg); transition: var(--main-transition);"
+    arrow.style.cssText =
+      "transform: rotate(45deg); transition: var(--main-transition);";
   } else {
     myP.style.display = "none";
-    arrow.style.cssText="transform: rotate(0deg); transition: var(--main-transition);"
+    arrow.style.cssText =
+      "transform: rotate(0deg); transition: var(--main-transition);";
   }
 }
 function plusOpen1() {
@@ -69,10 +72,12 @@ function plusOpen1() {
 
   if (myP.style.display == "none") {
     myP.style.display = "block";
-    arrow.style.cssText="transform: rotate(45deg); transition: var(--main-transition);"
+    arrow.style.cssText =
+      "transform: rotate(45deg); transition: var(--main-transition);";
   } else {
     myP.style.display = "none";
-    arrow.style.cssText="transform: rotate(0deg); transition: var(--main-transition);"
+    arrow.style.cssText =
+      "transform: rotate(0deg); transition: var(--main-transition);";
   }
 }
 function plusOpen2() {
@@ -81,10 +86,12 @@ function plusOpen2() {
 
   if (myP.style.display == "none") {
     myP.style.display = "block";
-    arrow.style.cssText="transform: rotate(45deg); transition: var(--main-transition);"
+    arrow.style.cssText =
+      "transform: rotate(45deg); transition: var(--main-transition);";
   } else {
     myP.style.display = "none";
-    arrow.style.cssText="transform: rotate(0deg); transition: var(--main-transition);"
+    arrow.style.cssText =
+      "transform: rotate(0deg); transition: var(--main-transition);";
   }
 }
 function plusOpen3() {
@@ -93,10 +100,12 @@ function plusOpen3() {
 
   if (myP.style.display == "none") {
     myP.style.display = "block";
-    arrow.style.cssText="transform: rotate(45deg); transition: var(--main-transition);"
+    arrow.style.cssText =
+      "transform: rotate(45deg); transition: var(--main-transition);";
   } else {
     myP.style.display = "none";
-    arrow.style.cssText="transform: rotate(0deg); transition: var(--main-transition);"
+    arrow.style.cssText =
+      "transform: rotate(0deg); transition: var(--main-transition);";
   }
 }
 function plusOpen4() {
@@ -105,9 +114,11 @@ function plusOpen4() {
 
   if (myP.style.display == "none") {
     myP.style.display = "block";
-    arrow.style.cssText="transform: rotate(45deg); transition: var(--main-transition);"
+    arrow.style.cssText =
+      "transform: rotate(45deg); transition: var(--main-transition);";
   } else {
     myP.style.display = "none";
-    arrow.style.cssText="transform: rotate(0deg); transition: var(--main-transition);"
+    arrow.style.cssText =
+      "transform: rotate(0deg); transition: var(--main-transition);";
   }
 }

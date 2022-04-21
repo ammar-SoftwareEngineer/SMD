@@ -33,6 +33,7 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 /* start dark mode */
@@ -440,14 +441,14 @@ header .setting i:last-child {
     background-image: url("../images/Rect\ Light.svg");
     background-repeat: no-repeat;
     background-size: cover;
-
+    min-height: calc(100vh - 100px);
 }
 
 .landing::before {
     content: "";
     position: absolute;
     width: 100%;
-    height: 40rem;
+    min-height: 40rem;
     top: 36%;
     background-color: hsl(0 0% 44% /60%);
     opacity: 80%;
@@ -455,10 +456,10 @@ header .setting i:last-child {
 
 }
 
-@media only screen and (max-width:767px) {
+@media (max-width:767px) {
     .landing::before {
         top: 40%;
-        height: 35rem;
+        min-height: 35rem;
     }
 }
 
@@ -467,15 +468,14 @@ header .setting i:last-child {
     padding-bottom: 120px;
     align-items: center;
     justify-content: center;
-    min-height: calc(100vh - 100px);
     position: relative;
 
 }
 
 .landing .main-text {
     position: absolute;
-    top: 20%;
-    transform: translateY(-50%);
+    top: 70%;
+    /* transform: translateY(-50%); */
     text-align: center;
     display: flex;
     justify-content: center;
@@ -496,7 +496,18 @@ header .setting i:last-child {
     font-size: 1.5rem;
     margin-bottom: 50px;
 }
-
+@media (max-width:991px) {
+    .landing .main-text {
+        position: absolute;
+        top: 50%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: fit-content;
+    }
+}
 @media(max-width:767px) {
     .landing .main-text h1 {
         font-size: 1.8rem;
@@ -504,6 +515,10 @@ header .setting i:last-child {
 
     .landing .main-text p {
         font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+    .landing .main-text {
+        top: 70%;
     }
 
 }
@@ -557,7 +572,7 @@ header .setting i:last-child {
 @media (max-width:767px) {
     .main-text form {
         position: absolute;
-        bottom: -80px;
+        bottom: -85px;
         left: 50%;
         transform: translateX(-50%);
         display: flex;
@@ -584,8 +599,8 @@ header .setting i:last-child {
 .landing .social {
     position: absolute;
     left: 50%;
-    top: 40%;
-    transform: translate(-50%, -50%);
+    top: 320px;
+    transform: translate(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -662,7 +677,7 @@ header .setting i:last-child {
 
 @media(max-width:767px) {
     .landing .social {
-        margin-top: 65px;
+        margin-top: 50px;
         height: 35px;
         width: 35px;
     }
@@ -688,7 +703,7 @@ header .setting i:last-child {
 .landing .download {
     position: absolute;
     left: 50%;
-    top: 60%;
+    top: 500px;
     transform: translate(-50%, -50%);
 }
 
@@ -709,7 +724,7 @@ header .setting i:last-child {
     font-size: 18px;
     margin-left: 20px;
     color: #24262B;
-    
+
 }
 
 
@@ -740,7 +755,7 @@ header .setting i:last-child {
 
     .landing .download {
         left: 47%;
-        top: 75%;
+        top: 580px;
     }
 
     .landing .download ul li {
@@ -767,8 +782,8 @@ header .setting i:last-child {
 /* quality download */
 .landing .quality-download {
     position: absolute;
-    right: 67%;
-    top: 80%;
+    right: 67.5%;
+    top: 665px;
     transform: translateY(-50%);
     display: flex;
     background-color: white;
@@ -834,7 +849,7 @@ header .setting i:last-child {
     .landing .quality-download {
         display: none;
         right: 50%;
-        top: 75%;
+        top: 585px;
         transform: translate(50%, -50%);
     }
 
@@ -853,7 +868,7 @@ header .setting i:last-child {
 .landing .quality-audio {
     position: absolute;
     left: 50.5%;
-    top: 80%;
+    top: 665px;
     transform: translate(-50%, -50%);
     display: flex;
     background-color: white;
@@ -911,6 +926,7 @@ header .setting i:last-child {
     .landing .quality-audio {
         position: absolute;
         left: 50%;
+        top: 585px;
         padding: 20px;
         display: none;
     }
@@ -921,7 +937,7 @@ header .setting i:last-child {
 .landing .quality-translate {
     position: absolute;
     left: 82.5%;
-    top: 80%;
+    top: 665px;
     transform: translate(-50%, -50%);
     display: flex;
     background-color: white;
@@ -943,7 +959,7 @@ header .setting i:last-child {
     margin-top: 10px;
     font-weight: bold;
     color: #24262B;
-    
+
 }
 
 .landing .quality-translate .mp4-two {
@@ -958,7 +974,7 @@ header .setting i:last-child {
     border-radius: 20px;
     margin-top: 10px;
     color: #24262B;
-   
+
 }
 
 .landing .quality-translate ul li {
@@ -992,7 +1008,7 @@ header .setting i:last-child {
 
     .landing .quality-translate {
         left: 50%;
-        top: 45%;
+        top: 350px;
         transform: translate(-50%, 50%);
         padding: 20px;
         display: none;
@@ -1293,6 +1309,9 @@ header .setting i:last-child {
 }
 
 @media(max-width:767px) {
+    .team .landing-team {
+        min-height: 112vh;
+    }
     .team .box .container {
         column-gap: 100px;
         row-gap: 120px;
@@ -1300,8 +1319,8 @@ header .setting i:last-child {
     }
 
     .team .landing-team::before {
-        height: 50rem;
-        top: 35%;
+      height: 38rem;
+        top: 50%;
     }
 
     .team .box {
