@@ -859,7 +859,7 @@ header .setting i:last-child {
 /* audio */
 .landing .quality-audio {
     position: absolute;
-    left: 50.5%;
+    left: 51%;
     top: 665px;
     transform: translate(-50%, -50%);
     display: flex;
