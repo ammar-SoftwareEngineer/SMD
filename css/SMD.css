@@ -1292,6 +1292,10 @@ header .setting i:last-child {
     margin-bottom: 25px;
 }
 
+.team .box-team .team-deveolp .size .icon {
+    margin: 5px;
+}
+
 @media(max-width:991px) {
     .team .landing-team {
         min-height: 125vh;

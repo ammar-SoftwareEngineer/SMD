@@ -313,7 +313,8 @@ header nav ul {
         left: 100%;
         top: 0;
     }
-    header .setting i:last-child{
+
+    header .setting i:last-child {
         padding: 5px;
         font-size: 18px;
         transform: rotate(-90deg);
@@ -472,6 +473,7 @@ header .setting i:last-child {
         height: 35rem;
     }
 }
+
 .landing .container {
     display: flex;
     padding-bottom: 120px;
@@ -480,6 +482,7 @@ header .setting i:last-child {
     position: relative;
 
 }
+
 .landing .main-text {
     position: absolute;
     top: 70%;
@@ -503,11 +506,13 @@ header .setting i:last-child {
     color: white;
     font-size: 1.5rem;
 }
+
 @media (max-width:991px) {
     .landing .main-text {
         top: 50%;
     }
 }
+
 @media(max-width:767px) {
 
     .landing .main-text h1 {
@@ -518,6 +523,7 @@ header .setting i:last-child {
         font-size: 1.2rem;
         margin-bottom: 30px;
     }
+
     .landing .main-text {
         top: 85%;
     }
@@ -656,7 +662,7 @@ header .setting i:last-child {
 }
 
 .landing .social .icon:nth-child(5) {
-    
+
     background-color: #F20FA6;
 
 }
@@ -845,6 +851,7 @@ header .setting i:last-child {
     color: #24262B;
 
 }
+
 .landing .quality-download ul li:hover {
     background-color: #f79d4e;
     cursor: pointer;
@@ -909,10 +916,12 @@ header .setting i:last-child {
     text-align: center;
     color: #24262B;
 }
+
 .landing .quality-audio ul li:hover {
     background-color: #f79d4e;
     cursor: pointer;
 }
+
 @media(max-width:991px) {
     .landing .quality-audio i {
         font-size: 20px;
@@ -988,10 +997,12 @@ header .setting i:last-child {
     color: #24262B;
 
 }
+
 .landing .quality-translate ul li:hover {
     background-color: #f79d4e;
     cursor: pointer;
 }
+
 @media(max-width:991px) {
     .landing .quality-translate i {
         font-size: 20px;
@@ -1301,7 +1312,9 @@ header .setting i:last-child {
     margin-bottom: 25px;
 
 }
-
+.team .box-team .team-deveolp .size .icon {
+    margin: 5px;
+}
 @media(max-width:991px) {
     .team .landing-team {
         min-height: 125vh;
@@ -1460,6 +1473,7 @@ header .setting i:last-child {
         margin-right: 50px;
         font-size: 15px;
     }
+
     .contact .content .info .phone {
         margin-right: 50px;
     }
@@ -1525,8 +1539,9 @@ header .setting i:last-child {
         justify-content: space-between;
         align-items: center;
         position: relative;
-    
+
     }
+
     .contact .social p:nth-child(6) {
         position: absolute;
         right: 81%;

@@ -15,11 +15,10 @@ function openMenu() {
 
   if (menu.style.display == "none") {
     menu.style.display = "flex";
-  } else{
+  } else {
     menu.style.display = "none";
-  } 
+  }
 }
-
 
 // landing download open list
 function openList1() {
@@ -51,10 +50,6 @@ function openList3() {
     list.style.display = "none";
   }
 }
-
-
-
-
 
 // about questions plus
 function plusOpen() {
