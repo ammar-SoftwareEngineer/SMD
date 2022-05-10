@@ -1336,7 +1336,7 @@ header .setting i:last-child {
     }
 
     .team .box-team .team-deveolp:hover .size {
-        height: 120px;
+        height: 100%;
         width: 160px;
         margin-top: 45px;
     }
