@@ -20,6 +20,7 @@ function openMenu() {
   } 
 }
 
+
 // landing download open list
 function openList1() {
   let list = document.querySelector(".quality-download");
@@ -50,6 +51,10 @@ function openList3() {
     list.style.display = "none";
   }
 }
+
+
+
+
 
 // about questions plus
 function plusOpen() {

@@ -697,6 +697,7 @@ header .setting i:last-child {
     left: 50%;
     top: 500px;
     transform: translate(-50%, -50%);
+    
 }
 
 .landing .download ul {
@@ -1286,7 +1287,6 @@ header .setting i:last-child {
 .team .box-team .team-deveolp .size p {
     font-size: 14px;
     margin-bottom: 25px;
-
 }
 
 @media(max-width:991px) {
