@@ -495,11 +495,13 @@ header .setting i:last-child {
     font-size: 1.5rem;
     margin-bottom: 50px;
 }
+
 @media (max-width:991px) {
     .landing .main-text {
         top: 50%;
     }
 }
+
 @media(max-width:767px) {
     .landing .main-text h1 {
         font-size: 1.8rem;
@@ -509,6 +511,7 @@ header .setting i:last-child {
         font-size: 1.2rem;
         margin-bottom: 30px;
     }
+
     .landing .main-text {
         top: 70%;
     }
@@ -697,7 +700,7 @@ header .setting i:last-child {
     left: 50%;
     top: 500px;
     transform: translate(-50%, -50%);
-    
+
 }
 
 .landing .download ul {
@@ -1304,6 +1307,7 @@ header .setting i:last-child {
     .team .landing-team {
         min-height: 112vh;
     }
+
     .team .box .container {
         column-gap: 100px;
         row-gap: 120px;
@@ -1311,7 +1315,7 @@ header .setting i:last-child {
     }
 
     .team .landing-team::before {
-      height: 38rem;
+        height: 38rem;
         top: 50%;
     }
 
@@ -1326,7 +1330,7 @@ header .setting i:last-child {
     }
 
     .team .box-team .team-deveolp:hover .size {
-        height: 120px;
+        height: 100%;
         width: 160px;
         margin-top: 45px;
     }
@@ -1434,19 +1438,21 @@ header .setting i:last-child {
 }
 
 @media(max-width:991px) {
-  
+
     .contact .content .info h4 {
         margin-left: 20px;
-    
+
     }
+
     .contact .content .info .phone {
         margin-left: 30px;
     }
+
     .contact .content .info address {
         font-size: 15px;
         margin-left: 24px;
     }
-    
+
 }
 
 .contact .social {
